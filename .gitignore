@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+progress.db
+.DS_Store
+.vscode/
+.venv/
+*.log

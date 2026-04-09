@@ -1,0 +1,862 @@
+[
+  {
+    "id": 1,
+    "difficulty": "easy",
+    "problem": "Write a function that returns 'Hello, World!'",
+    "breakdown": [
+      "Define a function using the 'def' keyword",
+      "Give the function a name, like 'hello'",
+      "Inside the function, use 'return' to return the string 'Hello, World!'"
+    ],
+    "hints": [
+      "Functions start with 'def'",
+      "Strings are enclosed in quotes",
+      "Use 'return' to send back a value"
+    ]
+  },
+  {
+    "id": 2,
+    "difficulty": "easy",
+    "problem": "Write a function that takes a number and returns its square.",
+    "breakdown": [
+      "Define a function that takes one parameter (the number)",
+      "Inside the function, calculate the square using multiplication or exponentiation",
+      "Return the calculated square"
+    ],
+    "hints": [
+      "Use 'def function_name(parameter):'",
+      "Square can be calculated as num * num or num ** 2",
+      "Don't forget to return the result"
+    ]
+  },
+  {
+    "id": 3,
+    "difficulty": "easy",
+    "problem": "Write a program to print numbers from 1 to 10.",
+    "breakdown": [
+      "Use a loop to iterate from 1 to 10",
+      "Inside the loop, print each number",
+      "Use the range() function for the loop"
+    ],
+    "hints": [
+      "For loops work well: for i in range(1, 11):",
+      "print(i) will output the number",
+      "range(1, 11) gives numbers 1 through 10"
+    ]
+  },
+  {
+    "id": 4,
+    "difficulty": "easy",
+    "problem": "Write a function to check if a number is even.",
+    "breakdown": [
+      "Define a function that takes a number as parameter",
+      "Use the modulo operator (%) to check if divisible by 2",
+      "Return True if even, False if odd"
+    ],
+    "hints": [
+      "Even numbers have no remainder when divided by 2",
+      "Use num % 2 == 0",
+      "Return a boolean value"
+    ]
+  },
+  {
+    "id": 5,
+    "difficulty": "easy",
+    "problem": "Write a function to find the maximum of two numbers.",
+    "breakdown": [
+      "Define a function that takes two parameters",
+      "Compare the two numbers",
+      "Return the larger one"
+    ],
+    "hints": [
+      "Use if-else statements for comparison",
+      "You can also use the built-in max() function",
+      "Return the greater value"
+    ]
+  },
+  {
+    "id": 6,
+    "difficulty": "easy",
+    "problem": "Write a program to calculate the sum of a list of numbers.",
+    "breakdown": [
+      "Initialize a variable to hold the sum (start at 0)",
+      "Loop through each number in the list",
+      "Add each number to the sum variable",
+      "Print or return the final sum"
+    ],
+    "hints": [
+      "Use a for loop: for num in list:",
+      "sum += num accumulates the total",
+      "Start with sum = 0"
+    ]
+  },
+  {
+    "id": 7,
+    "difficulty": "easy",
+    "problem": "Write a function to reverse a string.",
+    "breakdown": [
+      "Define a function that takes a string parameter",
+      "Use string slicing to reverse the string",
+      "Return the reversed string"
+    ],
+    "hints": [
+      "String slicing: string[::-1] reverses it",
+      "You can also use reversed() and join()",
+      "Return the reversed version"
+    ]
+  },
+  {
+    "id": 8,
+    "difficulty": "easy",
+    "problem": "Write a program to count the number of vowels in a string.",
+    "breakdown": [
+      "Define the vowels (a, e, i, o, u)",
+      "Initialize a counter variable",
+      "Loop through each character in the string",
+      "If the character is a vowel, increment the counter",
+      "Print the final count"
+    ],
+    "hints": [
+      "Use a for loop over the string",
+      "Check if char.lower() in 'aeiou'",
+      "Case-insensitive counting"
+    ]
+  },
+  {
+    "id": 9,
+    "difficulty": "easy",
+    "problem": "Write a function to check if a string is a palindrome.",
+    "breakdown": [
+      "Define a function that takes a string parameter",
+      "Compare the string with its reverse",
+      "Return True if they match, False otherwise"
+    ],
+    "hints": [
+      "A palindrome reads the same forwards and backwards",
+      "Use string == string[::-1]",
+      "Ignore case if needed"
+    ]
+  },
+  {
+    "id": 10,
+    "difficulty": "easy",
+    "problem": "Write a program to find the factorial of a number.",
+    "breakdown": [
+      "Define a function that takes a number parameter",
+      "Initialize result to 1",
+      "Use a loop from 1 to the number, multiplying result by each",
+      "Return the result"
+    ],
+    "hints": [
+      "Factorial: n! = n * (n-1) * ... * 1",
+      "Use a for loop: for i in range(1, n+1)",
+      "Handle n=0 case (0! = 1)"
+    ]
+  },
+  {
+    "id": 11,
+    "difficulty": "easy",
+    "problem": "Write a function to convert Celsius to Fahrenheit.",
+    "breakdown": [
+      "Define a function that takes Celsius temperature",
+      "Use the formula: F = (C * 9/5) + 32",
+      "Return the Fahrenheit value"
+    ],
+    "hints": [
+      "Formula is straightforward arithmetic",
+      "Use floating point division: 9/5",
+      "Return a float"
+    ]
+  },
+  {
+    "id": 12,
+    "difficulty": "easy",
+    "problem": "Write a program to print the Fibonacci sequence up to n terms.",
+    "breakdown": [
+      "Initialize first two terms: 0, 1",
+      "Use a loop to generate next terms by adding previous two",
+      "Print each term in the sequence"
+    ],
+    "hints": [
+      "Fibonacci: each term is sum of previous two",
+      "Use a loop with n iterations",
+      "Start with a=0, b=1"
+    ]
+  },
+  {
+    "id": 13,
+    "difficulty": "easy",
+    "problem": "Write a function to find the length of a list.",
+    "breakdown": [
+      "Define a function that takes a list parameter",
+      "Use the built-in len() function",
+      "Return the length"
+    ],
+    "hints": [
+      "len(list) gives the number of elements",
+      "Very simple function",
+      "Return an integer"
+    ]
+  },
+  {
+    "id": 14,
+    "difficulty": "easy",
+    "problem": "Write a program to sort a list of numbers.",
+    "breakdown": [
+      "Use the built-in sorted() function or list.sort()",
+      "Print the sorted list"
+    ],
+    "hints": [
+      "sorted(list) returns a new sorted list",
+      "list.sort() sorts in place",
+      "Works for numbers automatically"
+    ]
+  },
+  {
+    "id": 15,
+    "difficulty": "easy",
+    "problem": "Write a function to remove duplicates from a list.",
+    "breakdown": [
+      "Define a function that takes a list",
+      "Use a set to remove duplicates, then convert back to list",
+      "Return the list without duplicates"
+    ],
+    "hints": [
+      "set(list) removes duplicates",
+      "list(set(original_list))",
+      "Order may change"
+    ]
+  },
+  {
+    "id": 16,
+    "difficulty": "easy",
+    "problem": "Write a program to check if a number is prime.",
+    "breakdown": [
+      "Define a function that takes a number",
+      "Check divisibility from 2 to sqrt(n)",
+      "Return True if no divisors found"
+    ],
+    "hints": [
+      "Prime numbers have no divisors other than 1 and themselves",
+      "Use a loop: for i in range(2, int(n**0.5)+1)",
+      "Handle n=1 and n=2 cases"
+    ]
+  },
+  {
+    "id": 17,
+    "difficulty": "easy",
+    "problem": "Write a function to find the GCD of two numbers.",
+    "breakdown": [
+      "Use the Euclidean algorithm",
+      "While b != 0, set a, b = b, a % b",
+      "Return a when b is 0"
+    ],
+    "hints": [
+      "GCD is the greatest common divisor",
+      "Euclidean algorithm is efficient",
+      "Use modulo operator %"
+    ]
+  },
+  {
+    "id": 18,
+    "difficulty": "easy",
+    "problem": "Write a program to count the frequency of each character in a string.",
+    "breakdown": [
+      "Use a dictionary to store counts",
+      "Loop through each character",
+      "Increment count for each character",
+      "Print the dictionary"
+    ],
+    "hints": [
+      "Use dict or collections.Counter",
+      "for char in string: counts[char] += 1",
+      "Handle case sensitivity"
+    ]
+  },
+  {
+    "id": 19,
+    "difficulty": "easy",
+    "problem": "Write a function to merge two sorted lists.",
+    "breakdown": [
+      "Use the + operator to concatenate lists",
+      "Sort the combined list",
+      "Return the sorted list"
+    ],
+    "hints": [
+      "list1 + list2 creates combined list",
+      "Then use sorted()",
+      "For efficiency, use two-pointer approach"
+    ]
+  },
+  {
+    "id": 20,
+    "difficulty": "easy",
+    "problem": "Write a program to find the median of a list of numbers.",
+    "breakdown": [
+      "Sort the list",
+      "If odd length, median is middle element",
+      "If even, average of two middle elements"
+    ],
+    "hints": [
+      "Sort first: sorted_list = sorted(list)",
+      "Middle index: len//2",
+      "For even: (sorted_list[mid-1] + sorted_list[mid]) / 2"
+    ]
+  },
+  {
+    "id": 21,
+    "difficulty": "medium",
+    "problem": "Write a function to implement binary search.",
+    "breakdown": [
+      "Define a function that takes sorted list and target",
+      "Use two pointers: left and right",
+      "While left <= right, check middle element",
+      "Adjust pointers based on comparison",
+      "Return index if found, -1 if not"
+    ],
+    "hints": [
+      "Requires sorted list",
+      "mid = (left + right) // 2",
+      "If target < list[mid], right = mid - 1",
+      "Recursive or iterative implementation"
+    ]
+  },
+  {
+    "id": 22,
+    "difficulty": "medium",
+    "problem": "Write a program to solve the Tower of Hanoi problem.",
+    "breakdown": [
+      "Define a recursive function with n disks and three rods",
+      "Base case: if n == 1, move disk directly",
+      "Otherwise, move n-1 to auxiliary, then nth to destination, then n-1 to destination"
+    ],
+    "hints": [
+      "Classic recursion problem",
+      "Three rods: source, auxiliary, destination",
+      "Print each move"
+    ]
+  },
+  {
+    "id": 23,
+    "difficulty": "medium",
+    "problem": "Write a function to find the longest common subsequence.",
+    "breakdown": [
+      "Use dynamic programming with 2D table",
+      "Fill table based on character matches",
+      "Backtrack to find the subsequence",
+      "Return the LCS string"
+    ],
+    "hints": [
+      "DP table: dp[i][j] = dp[i-1][j-1] + 1 if match",
+      "Otherwise max(dp[i-1][j], dp[i][j-1])",
+      "Reconstruct from table"
+    ]
+  },
+  {
+    "id": 24,
+    "difficulty": "medium",
+    "problem": "Write a program to implement a stack using a list.",
+    "breakdown": [
+      "Define a class with a list attribute",
+      "Implement push, pop, peek, is_empty methods",
+      "Use list.append() for push, list.pop() for pop"
+    ],
+    "hints": [
+      "Stack is LIFO (Last In First Out)",
+      "Use list as underlying data structure",
+      "pop() removes and returns last element"
+    ]
+  },
+  {
+    "id": 25,
+    "difficulty": "medium",
+    "problem": "Write a function to check if a string has balanced parentheses.",
+    "breakdown": [
+      "Use a stack to track opening brackets",
+      "Loop through string, push opening, pop for closing",
+      "Check matching types and final stack emptiness"
+    ],
+    "hints": [
+      "Handle (), [], {}",
+      "Use a list as stack",
+      "Return False if mismatch or non-empty stack"
+    ]
+  },
+  {
+    "id": 26,
+    "difficulty": "medium",
+    "problem": "Write a program to find the shortest path in a graph (BFS).",
+    "breakdown": [
+      "Use a queue for BFS",
+      "Track visited nodes and distances",
+      "Enqueue neighbors, update distances",
+      "Return path or distance to target"
+    ],
+    "hints": [
+      "BFS explores level by level",
+      "Use collections.deque for queue",
+      "Keep parent pointers for path reconstruction"
+    ]
+  },
+  {
+    "id": 27,
+    "difficulty": "medium",
+    "problem": "Write a function to implement merge sort.",
+    "breakdown": [
+      "Define recursive function",
+      "Split list into two halves",
+      "Recursively sort each half",
+      "Merge the sorted halves"
+    ],
+    "hints": [
+      "Divide and conquer algorithm",
+      "Merge two sorted lists by comparing elements",
+      "Base case: list of length 1"
+    ]
+  },
+  {
+    "id": 28,
+    "difficulty": "medium",
+    "problem": "Write a program to find the kth largest element in a list.",
+    "breakdown": [
+      "Sort the list in descending order",
+      "Return the element at index k-1",
+      "Or use quickselect algorithm for efficiency"
+    ],
+    "hints": [
+      "sorted(list, reverse=True)[k-1]",
+      "Quickselect is O(n) average",
+      "Handle 1-based indexing"
+    ]
+  },
+  {
+    "id": 29,
+    "difficulty": "medium",
+    "problem": "Write a function to detect a cycle in a linked list (simulate with list).",
+    "breakdown": [
+      "Use two pointers: slow and fast",
+      "Move slow one step, fast two steps",
+      "If they meet, there's a cycle",
+      "Use a list of nodes with next pointers"
+    ],
+    "hints": [
+      "Floyd's cycle detection algorithm",
+      "Simulate linked list with list of dicts",
+      "Fast catches slow if cycle exists"
+    ]
+  },
+  {
+    "id": 30,
+    "difficulty": "medium",
+    "problem": "Write a program to implement a queue using two stacks.",
+    "breakdown": [
+      "Use two lists as stacks",
+      "For enqueue, push to stack1",
+      "For dequeue, if stack2 empty, transfer from stack1",
+      "Pop from stack2"
+    ],
+    "hints": [
+      "Queue is FIFO, stacks are LIFO",
+      "Transfer elements when needed",
+      "Amortized O(1) operations"
+    ]
+  },
+  {
+    "id": 31,
+    "difficulty": "medium",
+    "problem": "Write a function to find the intersection of two lists.",
+    "breakdown": [
+      "Use sets for efficient lookup",
+      "Convert lists to sets",
+      "Find common elements",
+      "Return as list"
+    ],
+    "hints": [
+      "set(list1) & set(list2)",
+      "Preserves unique elements",
+      "Order not guaranteed"
+    ]
+  },
+  {
+    "id": 32,
+    "difficulty": "medium",
+    "problem": "Write a program to calculate the power of a number using recursion.",
+    "breakdown": [
+      "Define recursive function base^exp",
+      "Base case: exp == 0 return 1",
+      "Return base * power(base, exp-1)"
+    ],
+    "hints": [
+      "Recursive: x^n = x * x^(n-1)",
+      "Handle negative exponents if needed",
+      "Efficient with exponentiation by squaring"
+    ]
+  },
+  {
+    "id": 33,
+    "difficulty": "medium",
+    "problem": "Write a function to rotate a list by k positions.",
+    "breakdown": [
+      "Use list slicing",
+      "Split at k and rearrange",
+      "list[k:] + list[:k]",
+      "Handle k > len(list)"
+    ],
+    "hints": [
+      "k = k % len(list) to handle large k",
+      "Slicing is efficient",
+      "Left rotate: list[k:] + list[:k]"
+    ]
+  },
+  {
+    "id": 34,
+    "difficulty": "medium",
+    "problem": "Write a program to find the maximum subarray sum.",
+    "breakdown": [
+      "Use Kadane's algorithm",
+      "Track current and maximum sums",
+      "Reset current sum if negative",
+      "Return maximum sum"
+    ],
+    "hints": [
+      "Handles negative numbers",
+      "Initialize max_sum = float('-inf')",
+      "current_sum = max(num, current_sum + num)"
+    ]
+  },
+  {
+    "id": 35,
+    "difficulty": "medium",
+    "problem": "Write a function to implement a hash table (using dict).",
+    "breakdown": [
+      "Use Python's built-in dict",
+      "Implement put, get, remove methods",
+      "Handle collisions (dict does it automatically)"
+    ],
+    "hints": [
+      "Dict is already a hash table",
+      "Simple wrapper class",
+      "Use dict[key] = value"
+    ]
+  },
+  {
+    "id": 36,
+    "difficulty": "medium",
+    "problem": "Write a program to solve the knapsack problem (0/1).",
+    "breakdown": [
+      "Use dynamic programming 2D table",
+      "dp[i][w] = max value for first i items, weight w",
+      "If item fits, max(include, exclude)",
+      "Return dp[n][capacity]"
+    ],
+    "hints": [
+      "DP table of size (n+1) x (capacity+1)",
+      "For each item, for each weight",
+      "Classic optimization problem"
+    ]
+  },
+  {
+    "id": 37,
+    "difficulty": "medium",
+    "problem": "Write a function to find the number of islands in a grid.",
+    "breakdown": [
+      "Use DFS or BFS to traverse grid",
+      "For each '1', start traversal, mark visited",
+      "Count connected components of '1's",
+      "Return the count"
+    ],
+    "hints": [
+      "Grid is 2D list of '0's and '1's",
+      "Use recursive DFS",
+      "Mark visited by changing to '0'"
+    ]
+  },
+  {
+    "id": 38,
+    "difficulty": "medium",
+    "problem": "Write a program to implement Dijkstra's algorithm.",
+    "breakdown": [
+      "Use priority queue for shortest distances",
+      "Initialize distances, set start to 0",
+      "While queue not empty, relax neighbors",
+      "Return distances or path"
+    ],
+    "hints": [
+      "Use heapq for priority queue",
+      "Graph as adjacency list",
+      "Greedy algorithm for shortest path"
+    ]
+  },
+  {
+    "id": 39,
+    "difficulty": "medium",
+    "problem": "Write a function to check if a graph is bipartite.",
+    "breakdown": [
+      "Use BFS with color assignment",
+      "Assign colors (0,1) to nodes",
+      "Check adjacent nodes have different colors",
+      "Return True if no conflicts"
+    ],
+    "hints": [
+      "Bipartite means two-colorable",
+      "Use queue for BFS",
+      "Graph with no odd cycles"
+    ]
+  },
+  {
+    "id": 40,
+    "difficulty": "medium",
+    "problem": "Write a program to find the longest increasing subsequence.",
+    "breakdown": [
+      "Use dynamic programming",
+      "dp[i] = max length ending at i",
+      "For each i, check all j < i where arr[j] < arr[i]",
+      "Return max(dp)"
+    ],
+    "hints": [
+      "O(n^2) DP solution",
+      "dp[i] = 1 + max(dp[j] for j < i if arr[j] < arr[i])",
+      "Can be optimized to O(n log n)"
+    ]
+  },
+  {
+    "id": 41,
+    "difficulty": "hard",
+    "problem": "Write a function to solve the N-Queens problem.",
+    "breakdown": [
+      "Use backtracking to place queens",
+      "Check safe positions (no attack)",
+      "Place queen, recurse, backtrack",
+      "Collect valid board configurations"
+    ],
+    "hints": [
+      "8x8 board, place 8 queens",
+      "Check row, column, diagonals",
+      "Use sets for attacked positions"
+    ]
+  },
+  {
+    "id": 42,
+    "difficulty": "hard",
+    "problem": "Write a program to implement a trie data structure.",
+    "breakdown": [
+      "Define TrieNode class with children dict and is_end",
+      "Implement insert, search, starts_with methods",
+      "Use recursive or iterative approach"
+    ],
+    "hints": [
+      "Prefix tree for strings",
+      "Each node has children for each character",
+      "is_end marks end of word"
+    ]
+  },
+  {
+    "id": 43,
+    "difficulty": "hard",
+    "problem": "Write a function to find the median of two sorted arrays.",
+    "breakdown": [
+      "Use binary search approach",
+      "Partition arrays to find median",
+      "Ensure left parts <= right parts",
+      "Calculate median based on total length"
+    ],
+    "hints": [
+      "O(log min(n,m)) time",
+      "Find partition point in smaller array",
+      "Handle odd/even total lengths"
+    ]
+  },
+  {
+    "id": 44,
+    "difficulty": "hard",
+    "problem": "Write a program to solve the Sudoku puzzle.",
+    "breakdown": [
+      "Use backtracking to fill board",
+      "Find empty cell, try numbers 1-9",
+      "Check row, column, 3x3 box validity",
+      "Recurse until solved"
+    ],
+    "hints": [
+      "9x9 grid with constraints",
+      "Use sets or arrays for fast checks",
+      "Backtrack on invalid placements"
+    ]
+  },
+  {
+    "id": 45,
+    "difficulty": "hard",
+    "problem": "Write a function to implement LRU cache.",
+    "breakdown": [
+      "Use OrderedDict or dict + doubly linked list",
+      "Implement get and put methods",
+      "Move accessed items to end",
+      "Remove least recently used when full"
+    ],
+    "hints": [
+      "LRU: Least Recently Used eviction",
+      "OrderedDict preserves order",
+      "Use move_to_end for access"
+    ]
+  },
+  {
+    "id": 46,
+    "difficulty": "hard",
+    "problem": "Write a program to find the shortest superstring.",
+    "breakdown": [
+      "Use greedy approach with overlap",
+      "Find maximum overlap between strings",
+      "Merge strings with max overlap",
+      "Repeat until one string left"
+    ],
+    "hints": [
+      "NP-hard problem, approximation",
+      "Calculate overlap lengths",
+      "Greedy may not be optimal"
+    ]
+  },
+  {
+    "id": 47,
+    "difficulty": "hard",
+    "problem": "Write a function to solve the traveling salesman problem (approximation).",
+    "breakdown": [
+      "Use minimum spanning tree approach",
+      "Build MST, then DFS for path",
+      "Approximate TSP tour",
+      "Return the path and cost"
+    ],
+    "hints": [
+      "TSP is NP-hard",
+      "Christofides algorithm for approximation",
+      "Use graph with distances"
+    ]
+  },
+  {
+    "id": 48,
+    "difficulty": "hard",
+    "problem": "Write a program to implement a red-black tree.",
+    "breakdown": [
+      "Implement RB tree with rotations and recoloring",
+      "Maintain balance properties",
+      "Insert with fix-up operations",
+      "Handle all cases for balance"
+    ],
+    "hints": [
+      "Self-balancing BST",
+      "Red-black properties",
+      "Complex implementation"
+    ]
+  },
+  {
+    "id": 49,
+    "difficulty": "hard",
+    "problem": "Write a function to find the maximum flow in a network (Ford-Fulkerson).",
+    "breakdown": [
+      "Use residual graph",
+      "Find augmenting paths with BFS/DFS",
+      "Update residual capacities",
+      "Repeat until no more paths",
+      "Return total flow"
+    ],
+    "hints": [
+      "Max flow min cut theorem",
+      "Edmonds-Karp uses BFS",
+      "Graph with capacities"
+    ]
+  },
+  {
+    "id": 50,
+    "difficulty": "hard",
+    "problem": "Write a program to implement a compiler for a simple language.",
+    "breakdown": [
+      "Define grammar and lexer",
+      "Parse expressions/statements",
+      "Build AST",
+      "Generate code or interpret"
+    ],
+    "hints": [
+      "Very complex, start simple",
+      "Use tools like PLY or write from scratch",
+      "Handle variables, expressions, control flow"
+    ]
+  },
+  {
+    "id": 51,
+    "difficulty": "hard",
+    "problem": "Write a function to solve the subset sum problem.",
+    "breakdown": [
+      "Use dynamic programming",
+      "dp[i][s] = True if subset sum s possible with first i elements",
+      "For each item, update dp",
+      "Return dp[n][target]"
+    ],
+    "hints": [
+      "0/1 knapsack variant",
+      "DP table of size n x sum",
+      "Space can be optimized"
+    ]
+  },
+  {
+    "id": 52,
+    "difficulty": "hard",
+    "problem": "Write a program to implement A* search algorithm.",
+    "breakdown": [
+      "Use priority queue with f = g + h",
+      "g is cost so far, h is heuristic",
+      "Track came_from for path",
+      "Return path when goal reached"
+    ],
+    "hints": [
+      "Informed search algorithm",
+      "Heuristic must be admissible",
+      "Manhattan distance for grids"
+    ]
+  },
+  {
+    "id": 53,
+    "difficulty": "hard",
+    "problem": "Write a function to find the convex hull.",
+    "breakdown": [
+      "Use Graham scan or Jarvis march",
+      "Sort points by polar angle",
+      "Build hull by checking turns",
+      "Return hull points"
+    ],
+    "hints": [
+      "Computational geometry",
+      "Graham scan: sort, then scan",
+      "Jarvis march: find next point iteratively"
+    ]
+  },
+  {
+    "id": 54,
+    "difficulty": "hard",
+    "problem": "Write a program to solve the 8-puzzle problem.",
+    "breakdown": [
+      "Use A* search with Manhattan distance heuristic",
+      "Represent state as tuple",
+      "Generate moves, avoid cycles",
+      "Return solution path"
+    ],
+    "hints": [
+      "Sliding puzzle",
+      "Heuristic: sum of distances",
+      "Priority queue for open set"
+    ]
+  },
+  {
+    "id": 55,
+    "difficulty": "hard",
+    "problem": "Write a function to implement a neural network from scratch.",
+    "breakdown": [
+      "Define layers with weights and biases",
+      "Implement forward pass",
+      "Backpropagation for gradients",
+      "Update weights with gradient descent"
+    ],
+    "hints": [
+      "Use numpy for matrices",
+      "Sigmoid or ReLU activation",
+      "Chain rule for gradients"
+    ]
+  }
+]
