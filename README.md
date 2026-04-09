@@ -2,6 +2,8 @@
 
 A simple and elegant Streamlit application for generating random Python programming problems. Track your progress as you work through problems ranging from easy to hard difficulty levels.
 
+Access the app globally @: https://codinggymv2-qouzappjqvftlxpdpdj59bb.streamlit.app/
+
 ## Features
 
 - User accounts with secure login and signup
