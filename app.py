@@ -476,68 +476,69 @@ else:
     st.info('Sign in or create an account to save your tracked completions and metrics.')
 
 # Debug/Admin section
-st.divider()
-st.header('Debug - Database Viewer')
-with st.expander('View Database Contents'):
-    st.subheader('Users Table')
-    try:
-        conn = get_db_connection()
-        users_df = __import__('pandas').read_sql_query('SELECT id, username, created_at FROM users', conn)
-        if not users_df.empty:
-            st.dataframe(users_df, use_container_width=True)
-        else:
-            st.info('No users in database yet.')
-        conn.close()
-    except Exception as e:
-        st.error(f'Error reading users table: {e}')
+if 'user' in st.session_state and st.session_state.user.get('username') == 'maurice.jenkins':
+    st.divider()
+    st.header('Debug - Database Viewer')
+    with st.expander('View Database Contents'):
+        st.subheader('Users Table')
+        try:
+            conn = get_db_connection()
+            users_df = __import__('pandas').read_sql_query('SELECT id, username, created_at FROM users', conn)
+            if not users_df.empty:
+                st.dataframe(users_df, use_container_width=True)
+            else:
+                st.info('No users in database yet.')
+            conn.close()
+        except Exception as e:
+            st.error(f'Error reading users table: {e}')
 
-    st.subheader('Progress Table')
-    try:
-        conn = get_db_connection()
-        progress_df = __import__('pandas').read_sql_query(
-            'SELECT u.username, p.problem_id, p.status, p.updated_at FROM progress p JOIN users u ON p.user_id = u.id ORDER BY p.updated_at DESC',
-            conn
-        )
-        if not progress_df.empty:
-            st.dataframe(progress_df, use_container_width=True)
-        else:
-            st.info('No progress records in database yet.')
-        conn.close()
-    except Exception as e:
-        st.error(f'Error reading progress table: {e}')
+        st.subheader('Progress Table')
+        try:
+            conn = get_db_connection()
+            progress_df = __import__('pandas').read_sql_query(
+                'SELECT u.username, p.problem_id, p.status, p.updated_at FROM progress p JOIN users u ON p.user_id = u.id ORDER BY p.updated_at DESC',
+                conn
+            )
+            if not progress_df.empty:
+                st.dataframe(progress_df, use_container_width=True)
+            else:
+                st.info('No progress records in database yet.')
+            conn.close()
+        except Exception as e:
+            st.error(f'Error reading progress table: {e}')
 
-    st.subheader('Statistics')
-    try:
-        conn = get_db_connection()
-        c = conn.cursor()
-        
-        c.execute('SELECT COUNT(*) FROM users')
-        total_users = c.fetchone()[0]
-        
-        c.execute('SELECT COUNT(DISTINCT user_id) FROM progress WHERE status = "completed"')
-        users_with_completions = c.fetchone()[0]
-        
-        c.execute('SELECT COUNT(*) FROM progress WHERE status = "completed"')
-        total_completions = c.fetchone()[0]
-        
-        c.execute('SELECT COUNT(*) FROM progress WHERE status = "attempted"')
-        total_attempts = c.fetchone()[0]
-        
-        col1, col2, col3, col4 = st.columns(4)
-        with col1:
-            st.metric('Total Users', total_users)
-        with col2:
-            st.metric('Users w/ Completions', users_with_completions)
-        with col3:
-            st.metric('Total Completions', total_completions)
-        with col4:
-            st.metric('Total Attempts', total_attempts)
-        
-        conn.close()
-    except Exception as e:
-        st.error(f'Error calculating statistics: {e}')
+        st.subheader('Statistics')
+        try:
+            conn = get_db_connection()
+            c = conn.cursor()
+            
+            c.execute('SELECT COUNT(*) FROM users')
+            total_users = c.fetchone()[0]
+            
+            c.execute('SELECT COUNT(DISTINCT user_id) FROM progress WHERE status = "completed"')
+            users_with_completions = c.fetchone()[0]
+            
+            c.execute('SELECT COUNT(*) FROM progress WHERE status = "completed"')
+            total_completions = c.fetchone()[0]
+            
+            c.execute('SELECT COUNT(*) FROM progress WHERE status = "attempted"')
+            total_attempts = c.fetchone()[0]
+            
+            col1, col2, col3, col4 = st.columns(4)
+            with col1:
+                st.metric('Total Users', total_users)
+            with col2:
+                st.metric('Users w/ Completions', users_with_completions)
+            with col3:
+                st.metric('Total Completions', total_completions)
+            with col4:
+                st.metric('Total Attempts', total_attempts)
+            
+            conn.close()
+        except Exception as e:
+            st.error(f'Error calculating statistics: {e}')
 
-    st.subheader('Raw SQL Query')
+        st.subheader('Raw SQL Query')
     st.write('Enter a custom SQL query to execute against the database:')
     query = st.text_area('SQL Query', value='SELECT * FROM users;', height=100)
     if st.button('Execute Query'):
