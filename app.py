@@ -51,16 +51,13 @@ if OPENAI_AVAILABLE and openai_api_key:
 def init_db():
     conn = get_db_connection()
     c = conn.cursor()
-    # Drop existing tables if they exist with old schema
-    c.execute('DROP TABLE IF EXISTS progress')
-    c.execute('DROP TABLE IF EXISTS users')
-    c.execute('''CREATE TABLE users (
+    c.execute('''CREATE TABLE IF NOT EXISTS users (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         username TEXT UNIQUE NOT NULL,
         password_hash TEXT NOT NULL,
         created_at TEXT DEFAULT CURRENT_TIMESTAMP
     )''')
-    c.execute('''CREATE TABLE progress (
+    c.execute('''CREATE TABLE IF NOT EXISTS progress (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         user_id INTEGER NOT NULL,
         problem_id INTEGER NOT NULL,
